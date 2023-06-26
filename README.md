@@ -110,7 +110,7 @@ services:
 
 以及一个workspace文件夹，用于存放git clone代码。具体摆放如下
 
-![layout](figures\layout.png)
+![layout](figures/layout.png)
 
 终端cd到yml文件的目录下，输入以下命令，启动docker
 
