@@ -1,0 +1,14 @@
+#!/bin/sh
+unset SESSION_MANAGER
+unset DBUS_SESSION_BUS_ADDRESS
+export GTK_IM_MODULE=fcitx
+export QT_IM_MODULE=fcitx
+export XMODIFIERS=@im=fcitx
+export LANG=zh_CN.UTF-8
+fcitx -r
+
+# disable screen blanking
+xset s off
+xset s noblank
+
+startxfce4

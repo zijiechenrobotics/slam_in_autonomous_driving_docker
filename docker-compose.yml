@@ -1,0 +1,17 @@
+version: '3.4'
+services:
+  sad-workspace:
+    build:
+      context: .
+    image: sad-workspace
+    environment:
+      - VNC_PW=abc123
+      - VNC_GEOMETRY=1920x1080
+      - VNC_DEPTH=24
+    volumes:
+      - ./workspace:/root/workspace
+    ports:
+      # noVNC port:
+      - 46080:6080
+      # standard VNC port:
+      - 45901:5901
